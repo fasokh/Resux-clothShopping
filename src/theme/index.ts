@@ -1,5 +1,10 @@
-import { extendTheme, ChakraTheme } from "@chakra-ui/react";
+import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 
-const theme = extendTheme({ direction: "ltr" } satisfies Partial<ChakraTheme>);
+const config = {
+  initailColorMode: "dark",
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({ config });
 
 export default theme;

@@ -7,7 +7,7 @@ import { NextPage } from "next";
 
 type Props = AppProps;
 
-const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+const App: NextPage<Props> = ({ Component, pageProps }) => {
   return (
     <AppChackraProvider>
       <Provider store={store}>
